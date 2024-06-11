@@ -1,0 +1,43 @@
+/*quando cheaga a este tamanho de largura vai acontecer....para telas menores*/
+@media(max-width: 1280px){
+    .cabecalho{
+        padding: 30px;
+    }
+
+    .home{
+       /* background-color: red;*/
+       flex-direction: column;  /*eelsobre escreve a regla anterior no css*/
+       align-items: center;
+       margin: 50px 0;
+       gap: 30px;  /*espasiamento entre os elementos*/
+    }
+
+    .home .informacoes{
+        max-width: 100%; /*par o texto ocupa o maximo espacio de largurada tela*/
+        text-align: center;
+        align-items: center;
+    }
+
+    .projetos .container_projetos{
+        padding:  0 30px;
+    }
+}
+
+/*para telas de celular*/
+@media(max-width: 425px){
+    .home .informacoes h1{
+        font-size: 30px;
+    }
+
+    .homne .informacoes p {
+        font-size: 16px;
+    }
+
+    .home .container-foto img{
+        max-width: 320px;
+    }
+
+    .projetos{
+        padding: 30px;
+    }
+}
